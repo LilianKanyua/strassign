@@ -1,9 +1,11 @@
 fun main(){
      myString()
     aboutMe("Alex",45)
-    strLength()
+    var result=strLength()
+    println(result)
     boolean("Frank")
     boolean("Lilian")
+
 
 }
 fun myString(){
@@ -17,9 +19,10 @@ fun myString(){
 fun aboutMe(name: String, age: Int) {
     println("Hi, my name is $name and I am $age years old.")
 }
-fun strLength(){
+fun strLength() : Int{
     var text="Adorable"
-    println(text.length)
+    var length =text.length
+    return length
 }
 fun boolean(name: String){
      if (name=="Lilian")
